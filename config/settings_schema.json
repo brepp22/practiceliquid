@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color_background",
+        "label": "Background color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_text",
+        "label": "Text color",
+        "default": "#000000"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "select",
+        "id": "font_family",
+        "label": "Font family",
+        "default": "system-ui, sans-serif",
+        "options": [
+          { "value": "system-ui, sans-serif", "label": "System UI" },
+          { "value": "Georgia, serif", "label": "Georgia" },
+          { "value": "'Times New Roman', Times, serif", "label": "Times New Roman" },
+          { "value": "Arial, sans-serif", "label": "Arial" }
+        ]
+      }
+    ]
+  }
+]
