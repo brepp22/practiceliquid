@@ -1,0 +1,36 @@
+<!-- sections/collection-minimal.liquid -->
+
+<section>
+  <h1>{{ collection.title }}</h1>
+
+  {% if collection.products_count > 0 %}
+    <ul>
+      {% for product in collection.products %}
+        <li>
+          <a href="{{ product.url }}">{{ product.title }}</a> — {{ product.price | money }}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No products found in this collection.</p>
+  {% endif %}
+
+  {% comment %} {% for collection in collections %}
+        {{forloop.index0}}
+        <p> {{ collection.title }}</p>
+        {% else %}
+        <p>There are no collections</p>
+  {%endfor%}
+  {% endcomment %}
+  
+{% comment %} 
+   {% for product in collections['frontpage'].products %}
+        {{forloop.index}}
+        <p> {{ product.title }}</p>
+        {% else %}
+        <p>There are no collections</p>
+  {%endfor%} {% endcomment %}
+ 
+
+  
+</section>

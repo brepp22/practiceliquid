@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "liquid-practice": {
+      "type": "liquid-practice",
+      "settings": {}
+    }
+  },
+  "order": [
+    "liquid-practice"
+  ]
+}
